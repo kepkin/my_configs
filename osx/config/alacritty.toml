@@ -1,0 +1,61 @@
+[window]
+option_as_alt = "Both"
+padding.x = 10
+padding.y = 10
+
+decorations = "Buttonless"
+opacity = 0.8
+blur = true
+
+
+[keyboard]
+bindings = [
+    { key = "T",        mods = "Command", action = "ReceiveChar"                     },
+    { key = "м",        mods = "Command", action = "Paste" }, # cyrillic CMD+v
+
+    { key = "Left",     mods = "Alt",     chars = "\u001bb"                          },
+    { key = "Left",     mods = "Alt",     chars = "\u001bb"                          }, # Skip word left
+    { key = "Right",    mods = "Alt",     chars = "\u001bf"                          }, # Skip word right
+    { key = "Left",     mods = "Command", chars = "\u001bOH",   mode = "AppCursor"   }, # Home
+    { key = "Right",    mods = "Command", chars = "\u001bOF",   mode = "AppCursor"   }, # End
+    { key = "Back",     mods = "Command", chars = "\u0015"                           }, # Delete line
+    { key = "Back",     mods = "Alt",     chars = "\u001b\u007f"                     }, # Delete word
+
+    # anti cyrillic mappings
+    { key = "с",  mods = "Control",  chars = "\u0003" }, # Ctrl + С (Cyrillic Es) -> Sends Ctrl+C (Hex \u0003)
+    { key = "м",  mods = "Control",  chars = "\u0016" }, # Ctrl + М (Cyrillic Em) -> Sends Ctrl+V (Hex \u0016)
+    { key = "ф",  mods = "Control",  chars = "\u0001" }, # Ctrl + Ф (Cyrillic Ef) -> Sends Ctrl+A (Hex \u0001)
+    { key = "и",  mods = "Control",  chars = "\u0002" }, # Ctrl + И (Cyrillic I) -> Sends Ctrl+B (Hex \u0002)
+    { key = "у",  mods = "Control",  chars = "\u0005" }, # Ctrl + У (Cyrillic U) -> Sends Ctrl+E (Hex \u0005)
+    { key = "а",  mods = "Control",  chars = "\u0006" }, # Ctrl + А (Cyrillic A) -> Sends Ctrl+F (Hex \u0006)
+    { key = "п",  mods = "Control",  chars = "\u0007" }, # Ctrl + П (Cyrillic Pe) -> Sends Ctrl+G (Hex \u0007)
+    { key = "р",  mods = "Control",  chars = "\u0008" }, # Ctrl + Р (Cyrillic Er) -> Sends Ctrl+H (Hex \u0008)
+    { key = "ш",  mods = "Control",  chars = "\u0009" }, # Ctrl + Ш (Cyrillic Sha) -> Sends Ctrl+I (Hex \u0009)
+    { key = "о",  mods = "Control",  chars = "\u000A" }, # Ctrl + О (Cyrillic O) -> Sends Ctrl+J (Hex \u000A)
+    { key = "л",  mods = "Control",  chars = "\u000B" }, # Ctrl + Л (Cyrillic El) -> Sends Ctrl+K (Hex \u000B)
+    { key = "д",  mods = "Control",  chars = "\u000C" }, # Ctrl + Д (Cyrillic De) -> Sends Ctrl+L (Hex \u000C)
+    { key = "т",  mods = "Control",  chars = "\u000e" }, # Ctrl + Т (Cyrillic Te) -> Sends Ctrl+N (Hex \u000E)
+    { key = "щ",  mods = "Control",  chars = "\u000F" }, # Ctrl + Щ (Cyrillic Shcha) -> Sends Ctrl+O (Hex \u000F)
+    { key = "з",  mods = "Control",  chars = "\u0010" }, # Ctrl + З (Cyrillic Ze) -> Sends Ctrl+P (Hex \u0010)
+    { key = "й",  mods = "Control",  chars = "\u0011" }, # Ctrl + Й (Cyrillic Short I) -> Sends Ctrl+Q (Hex \u0011)
+    { key = "к",  mods = "Control",  chars = "\u0012" }, # Ctrl + К (Cyrillic Ka) -> Sends Ctrl+R (Hex \u0012)
+    { key = "ы",  mods = "Control",  chars = "\u0013" }, # Ctrl + Ы (Cyrillic Yery) -> Sends Ctrl+S (Hex \u0013)
+    { key = "е",  mods = "Control",  chars = "\u0014" }, # Ctrl + Е (Cyrillic Ye) -> Sends Ctrl+T (Hex \u0014)
+    { key = "г",  mods = "Control",  chars = "\u0015" }, # Ctrl + Г (Cyrillic Ghe) -> Sends Ctrl+U (Hex \u0015)
+    { key = "ц",  mods = "Control",  chars = "\u0017" }, # Ctrl + Ц (Cyrillic Tse) -> Sends Ctrl+W (Hex \u0017)
+    { key = "ч",  mods = "Control",  chars = "\u0018" }, # Ctrl + Ч (Cyrillic Che) -> Sends Ctrl+X (Hex \u0018)
+    { key = "н",  mods = "Control",  chars = "\u0019" }, # Ctrl + Н (Cyrillic En) -> Sends Ctrl+Y (Hex \u0019)
+    { key = "я",  mods = "Control",  chars = "\u001A" } # Ctrl + Я (Cyrillic Ya) -> Sends Ctrl+Z (Hex \u001A)
+]
+
+[font.normal]
+family = "MesloLGM Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "MesloLGM Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "MesloLGM Nerd Font Mono"
+style = "Italic"
